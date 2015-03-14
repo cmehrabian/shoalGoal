@@ -1,4 +1,4 @@
-# Shoal Goal
+# Shoal Goal - Omari's Congregation Tool
 
-<h1>Omari's Congregation Tool</h1>
+<h1></h1>
 
