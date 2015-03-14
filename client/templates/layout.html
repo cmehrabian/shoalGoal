@@ -1,0 +1,16 @@
+<template name="layout">
+    <div class="bar bar-header bar-stable">
+        {{# if geolocation }}
+        <span class="pull-left text-muted">
+            <i class="fa fa-map-marker"></i>
+            Location: {{ truncateCoordinate geolocation.lat 3 }}, {{ truncateCoordinate geolocation.lng 3 }}
+        </span>
+        {{/ if }}
+        <h1 class="title">Shoal Finder!</h1>
+        <button class="button button-clear pull-right shoal-link button-positive">Add Shoal Location</button>
+    </div>
+
+    <div class="content">
+        {{> yield}}
+    </div>
+</template>

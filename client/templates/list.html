@@ -1,0 +1,40 @@
+<template name="list">
+    {{#each shoals}}
+    <div class="list card">
+
+        <div class="item">
+            <h2>{{ location.city }}</h2>
+            <p>{{ moment createdAt }}</p>
+            <p>{{printLocation}}</p>
+        </div>
+
+        <div class="item item-body">
+            <p>
+                {{ shoal }}
+                
+            </p>
+            <p>
+                <a href="#" class="subdued">{Attending}</a>
+                <a href="#" class="subdued">{comments}</a>
+            </p>
+        </div>
+
+        <div class="item tabs tabs-secondary tabs-icon-left">
+            <a class="tab-item" href="#">
+                <i class="icon ion-thumbsup"></i>
+                Attend
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-chatbox"></i>
+                Comment
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-share"></i>
+                Share
+            </a>
+        </div>
+
+    </div>
+
+    {{/each}}
+</template>
